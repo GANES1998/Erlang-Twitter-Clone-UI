@@ -1,0 +1,26 @@
+@import "src/styles/variables";
+
+.panel {
+  background: $panel-color;
+  height: 100%;
+
+  .panelItem {
+    height: 30px;
+    display: block;
+    text-align: left;
+    justify-content: start;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .activePanelItem {
+    background: $active-panel-color !important;
+  }
+
+}

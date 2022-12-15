@@ -1,0 +1,32 @@
+.tweet {
+  width: 700px;
+  padding: 30px 20px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 5px 2px lightgray;
+
+  .tweetTopLine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .tweetContent {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .tweetLastLine {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .retweetButton {
+      font-weight: bold;
+    }
+
+  }
+
+}
