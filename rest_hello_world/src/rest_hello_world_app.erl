@@ -13,7 +13,15 @@
 start(_Type, _Args) ->
 	Dispatch = cowboy_router:compile([
 		{'_', [
-			{"/", toppage_h, []}
+			{"/", toppage_h, []},
+			{"/signup", signup, []},
+			{"/signout", signout, []},
+			{"/tweets", tweets, []},
+			{"/feeds", feeds, []},
+			{"/searchhashtags", search_hashtags, []},
+			{"/subscribe", subscribe_handler, []},
+			{"/retweet", retweet, []},
+			{"/getmentions", getmentions, []}
 		]}
 	]),
 	{ok, _} = cowboy:start_clear(http, [{port, 8080}], #{
